@@ -1,0 +1,146 @@
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Nunito', sans-serif;
+}
+.with-bg-image{
+  background-repeat: no-repeat, no-repeat;
+  background-position: center center;
+}
+.bg-contain{
+  background-size: contain;
+}
+.bg-cover{
+  background-size: cover;
+}
+.blur{
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+}
+#hero{
+	height: 133vh;
+	background-image: url('../img/hero.jpg');
+}
+.wrapper{
+  background-image:
+    linear-gradient(
+      rgba(0, 0, 0, 0.33),
+      rgba(0, 0, 0, 0.33)
+    );
+}
+.navbar-brand, .title{
+	font-family: 'Pacifico', cursive;
+}
+.navbar-dark .navbar-nav .nav-link {
+    color: rgba(255,255,255,.8);
+}
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: rgba(255,255,255,.9);
+}
+.navbar-dark .navbar-nav .nav-link.active {
+    color: rgba(255,255,255,1);
+}
+.relative{
+	position:relative;
+}
+.bottom-right{
+	position:absolute;
+	bottom:1rem;
+	right:1rem;
+	padding-top:1rem;
+	padding-left:1rem;
+}
+.offer{
+	font-size: 2em;
+}
+.offer-description{
+	font-size: 1em;
+}
+.bg-custom{
+	-webkit-backdrop-filter: blur(5px);
+  	backdrop-filter: blur(5px);
+}
+.navbar {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    -webkit-transition: padding-top 0.3s, padding-bottom 0.3s;
+    -moz-transition: padding-top 0.3s, padding-bottom 0.3s;
+    transition: padding-top 0.3s, padding-bottom 0.3s;
+}
+.navbar-brand {
+  -webkit-transition: font-size 0.3s;
+  -moz-transition: font-size 0.3s;
+  transition: font-size 0.3s;
+}
+.navbar-dark .nav-link{
+	font-weight:bold;
+}
+.btn:hover, .permanent-shadow{
+	box-shadow: 5px 5px 5px 5px grey;
+}
+.text-shadow{
+	text-shadow: 0px 5px 5px grey;
+}
+.hero-content{
+	text-align: center;
+}
+.fa-stack{
+	transition: all 0.3s ease;
+}
+.color-blue{
+	color:#2196f3;
+}
+.color-green{
+	color:#4caf50;
+}
+.color-yellow{
+	color:#fbc02d;
+}
+.color-purple{
+	color:#9c27b0;
+}
+.fa-stack:hover .color-blue,
+.fa-stack:hover .color-green,
+.fa-stack:hover .color-yellow,
+.fa-stack:hover .color-purple{
+	color:#212121;
+}
+.fa-stack{
+	font-size: 4.25em;
+}
+@media (min-width: 768px) {
+	.offer{
+		font-size: 3.5em;
+	}
+	.offer-description{
+		font-size: 1.4em;
+	}
+	.bottom-right{
+		width:58%;
+		right:0rem;
+		bottom:3rem;
+	}
+	.bg-custom{
+		-webkit-backdrop-filter: none;
+  		backdrop-filter: none;
+	}
+	.navbar-brand{
+		font-size: 1.5em;
+	}
+	.hero-content{
+		text-align: right;
+	}
+}
+@media(min-width:992px) {
+  	
+}
+.navbar-shrink {
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
+}
+.navbar-shrink .navbar-brand {
+  font-size: 1.25em;
+}
+.navbar-shirk .nav-link{
+	font-weight:normal;
+}
