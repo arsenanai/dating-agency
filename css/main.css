@@ -99,10 +99,8 @@ body {
 .color-purple{
 	color:#9c27b0;
 }
-.fa-stack:hover .color-blue,
-.fa-stack:hover .color-green,
-.fa-stack:hover .color-yellow,
-.fa-stack:hover .color-purple{
+.fa-stack:hover .fas.fa-circle.fa-stack-2x,
+.fa-stack:active .fas.fa-circle.fa-stack-2x{
 	color:#212121;
 }
 .fa-stack{
