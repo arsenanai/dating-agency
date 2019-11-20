@@ -3,6 +3,9 @@ body {
   -moz-osx-font-smoothing: grayscale;
   font-family: 'Nunito', sans-serif;
 }
+p{
+	text-indent: 1rem;
+}
 .with-bg-image{
   background-repeat: no-repeat, no-repeat;
   background-position: center center;
@@ -19,7 +22,11 @@ body {
 }
 #hero{
 	height: 133vh;
-	/*background-image: url('../img/hero.jpg');*/
+	background-image: url('../img/hero.jpg');
+}
+#statistics{
+	background-image: url('../img/hero.jpg');
+	background-position: center 75%;
 }
 .wrapper{
   background-image:
@@ -29,7 +36,8 @@ body {
     );
 }
 .navbar-brand, .title{
-	font-family: 'Pacifico', cursive;
+	font-family: 'Philosopher', sans-serif;
+	text-decoration: italic;
 }
 .navbar-dark .navbar-nav .nav-link {
     color: rgba(255,255,255,.8);
@@ -75,21 +83,25 @@ body {
 .navbar-dark .nav-link{
 	font-weight:bold;
 }
-.btn, .permanent-shadow{
+.btn, 
+.card,
+.permanent-shadow{
 	transition: all 0.2s linear 0s;
-    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
-    -moz-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
-    -webkit-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+    box-shadow: 0 1px 4px 0 rgba(0,0,0,0.37);
 }
-.btn:hover, .permanent-shadow:hover, .btn:focus{
+
+.card{
+	border: none;
+}
+/*.btn{
     box-shadow: rgba(0, 0, 0, 0.419608) 0px 14px 26px -12px, rgba(0, 0, 0, 0.117647) 0px 4px 23px 0px, rgba(0, 0, 0, 0.2) 0px 8px 10px -5px;
     -moz-box-shadow: rgba(0, 0, 0, 0.419608) 0px 14px 26px -12px, rgba(0, 0, 0, 0.117647) 0px 4px 23px 0px, rgba(0, 0, 0, 0.2) 0px 8px 10px -5px;
     -webkit-box-shadow: rgba(0, 0, 0, 0.419608) 0px 14px 26px -12px, rgba(0, 0, 0, 0.117647) 0px 4px 23px 0px, rgba(0, 0, 0, 0.2) 0px 8px 10px -5px;
     outline: none;
-}
+}*/
 
 .text-shadow{
-	text-shadow: 0px 5px 5px grey;
+	text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.5);
 }
 .hero-content{
 	text-align: center;
@@ -97,24 +109,26 @@ body {
 .fa-stack{
 	transition: all 0.3s ease;
 }
-.color-blue{
-	color:#2196f3;
-}
-.color-green{
-	color:#4caf50;
-}
-.color-yellow{
-	color:#fbc02d;
-}
-.color-purple{
-	color:#9c27b0;
-}
-.fa-stack:hover .fas.fa-circle.fa-stack-2x,
-.fa-stack:active .fas.fa-circle.fa-stack-2x{
-	color:#212121;
+.bg-blue{
+	background-color:#2196f3;
 }
 .fa-stack{
 	font-size: 4.25em;
+}
+.photo{
+	border-radius: 0.25rem;
+	position:relative;
+}
+.p1{
+	margin-left: 40%;
+	margin-top: 5%;
+	z-index:11;
+}
+.p2{
+}
+.p3{
+	margin-left: -50%;
+	margin-top: 55%;
 }
 @media (min-width: 768px) {
 	.offer{
@@ -125,7 +139,7 @@ body {
 	}
 	.bottom-right{
 		width:58%;
-		right:0rem;
+		right:1rem;
 		bottom:3rem;
 	}
 	.bg-custom{

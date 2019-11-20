@@ -29,10 +29,12 @@
       $(".navbar").addClass("navbar-light");
       $(".navbar").addClass("navbar-shrink");
       $(".navbar").addClass("bg-light");
+      $(".navbar").addClass("permanent-shadow");
     } else {
       $(".navbar").removeClass("navbar-light");
       $(".navbar").removeClass("navbar-shrink");
       $(".navbar").removeClass("bg-light");
+      $(".navbar").removeClass("permanent-shadow");
       $(".navbar").addClass("navbar-dark");
       $(".navbar").addClass("bg-custom");
     }
