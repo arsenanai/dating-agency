@@ -6,6 +6,7 @@ body {
 p{
 	text-indent: 1rem;
 }
+
 .with-bg-image{
   background-repeat: no-repeat, no-repeat;
   background-position: center center;
