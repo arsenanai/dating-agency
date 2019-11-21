@@ -1,3 +1,20 @@
+
+
+
+window.addEventListener('scroll', function(){
+  var el = document.getElementById("photos-row");
+  //console.log(el.offsetHeight);
+  var viewportOffset = el.getBoundingClientRect();
+  var y = viewportOffset.bottom;
+  var h = el.offsetHeight;
+  console.log("top", y);
+  if(y+56<0 && y+56>h*(-1)){
+    var x = (-1)*(y+56);
+
+  }
+  //console.log("top: "+y);
+});
+
 (function($) {
   "use strict"; // Start of use strict
 
