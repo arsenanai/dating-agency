@@ -24,6 +24,10 @@ p{
 	height: 133vh;
 	background-image: url('../img/hero.jpg');
 }
+#hero2{
+	height: 100vh;
+	background-image: url('../img/hero.jpg');
+}
 #statistics{
 	background-image: url('../img/hero.jpg');
 	background-position: center 75%;
@@ -57,6 +61,11 @@ p{
 	right:1rem;
 	padding-top:1rem;
 	padding-left:1rem;
+}
+.center{
+	position:absolute;
+	bottom:50%;
+	right:50%;
 }
 .offer{
 	font-size: 2em;
